@@ -17,6 +17,7 @@ build:
 	@echo "Building $(APP_NAME)..."
 	@mkdir -p bin
 	go build $(LDFLAGS) -o $(BINARY_NAME) $(MAIN_PATH)
+	@chmod +x $(BINARY_NAME)
 	
 # Run the application
 run: build
